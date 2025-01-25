@@ -1,8 +1,8 @@
 function isEnoughCapacity(products, containerSize) {
     let total = 0;
     const fruitsAmount = Object.values(products);
-    for (const element of fruitsAmount) {
-        total += element;
+    for (const fruit of fruitsAmount) {
+        total += fruit;
     }
     return containerSize >= total;
 }
